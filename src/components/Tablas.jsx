@@ -1,14 +1,10 @@
 import { useSelector } from "react-redux";
-import {useEffect} from 'react';
 
 
 const Tablas = () => {
 
-    const { isLoading, citas, errorMessage } = useSelector((state) => state.citas);
+    const {isLoading,citas,errorMessage} = useSelector(state => state.citas);
 
-    useEffect(() =>{
-        console.log(citas)
-    })
 
     return (
         <div>

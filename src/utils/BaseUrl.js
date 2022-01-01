@@ -1,7 +1,7 @@
 import axios from "axios";
 
 const apiCita=()=>{
-  const  url  = "http://localhost:8080/";
+  const  url  = "https://sebas-juanes-citas.herokuapp.com/";
   const axiosInstance = axios.create({
     baseURL: url,
     responseType: "json",

@@ -1,0 +1,74 @@
+[debug] [2022-01-01T21:23:59.319Z] ----------------------------------------------------------------------
+[debug] [2022-01-01T21:23:59.321Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\juans\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js init
+[debug] [2022-01-01T21:23:59.321Z] CLI Version:   10.0.1
+[debug] [2022-01-01T21:23:59.321Z] Platform:      win32
+[debug] [2022-01-01T21:23:59.321Z] Node Version:  v16.8.0
+[debug] [2022-01-01T21:23:59.322Z] Time:          Sat Jan 01 2022 16:23:59 GMT-0500 (Colombia Standard Time)
+[debug] [2022-01-01T21:23:59.322Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2022-01-01T21:23:59.327Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2022-01-01T21:23:59.327Z] > authorizing via signed-in user (jscrojas251@gmail.com)
+[info] 
+     ######## #### ########  ######## ########     ###     ######  ########
+     ##        ##  ##     ## ##       ##     ##  ##   ##  ##       ##
+     ######    ##  ########  ######   ########  #########  ######  ######
+     ##        ##  ##    ##  ##       ##     ## ##     ##       ## ##
+     ##       #### ##     ## ######## ########  ##     ##  ######  ########
+
+You're about to initialize a Firebase project in this directory:
+
+  F:\Programacion\sofka\app-citas
+
+[info] 
+=== Project Setup
+[info] 
+[info] First, let's associate this project directory with a Firebase project.
+[info] You can create multiple project aliases by running firebase use --add, 
+[info] but for now we'll just set up a default project.
+[info] 
+[info] i  If you want to create a project in a Google Cloud organization or folder, please use "firebase projects:create" instead, and return to this command when you've created the project. 
+[debug] [2022-01-01T21:24:41.166Z] > refreshing access token with scopes: ["email","https://www.googleapis.com/auth/cloud-platform","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","openid"]
+[debug] [2022-01-01T21:24:41.166Z] >>> HTTP REQUEST POST https://www.googleapis.com/oauth2/v3/token  
+ <request body omitted>
+[debug] [2022-01-01T21:24:41.530Z] <<< HTTP RESPONSE 200 {"date":"Sat, 01 Jan 2022 21:24:46 GMT","cache-control":"no-cache, no-store, max-age=0, must-revalidate","pragma":"no-cache","expires":"Mon, 01 Jan 1990 00:00:00 GMT","content-type":"application/json; charset=utf-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","server":"scaffolding on HTTPServer2","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"h3=\":443\"; ma=2592000,h3-29=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[debug] [2022-01-01T21:24:41.538Z] >>> HTTP REQUEST POST https://cloudresourcemanager.googleapis.com/v1/projects  
+ {"projectId":"citas-padecimientos","name":"app-citas-padecimiento"}
+[debug] [2022-01-01T21:24:42.376Z] <<< HTTP RESPONSE 200 {"content-type":"application/json; charset=UTF-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","date":"Sat, 01 Jan 2022 21:24:46 GMT","server":"ESF","cache-control":"private","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","server-timing":"gfet4t7; dur=491","alt-svc":"h3=\":443\"; ma=2592000,h3-29=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[debug] [2022-01-01T21:24:42.378Z] > refreshing access token with scopes: []
+[debug] [2022-01-01T21:24:42.378Z] >>> HTTP REQUEST POST https://www.googleapis.com/oauth2/v3/token  
+ <request body omitted>
+[debug] [2022-01-01T21:24:42.687Z] <<< HTTP RESPONSE 200 {"pragma":"no-cache","expires":"Mon, 01 Jan 1990 00:00:00 GMT","date":"Sat, 01 Jan 2022 21:24:47 GMT","cache-control":"no-cache, no-store, max-age=0, must-revalidate","content-type":"application/json; charset=utf-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","server":"scaffolding on HTTPServer2","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"h3=\":443\"; ma=2592000,h3-29=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[debug] [2022-01-01T21:24:42.693Z] >>> [apiv2][query] GET https://cloudresourcemanager.googleapis.com/v1/operations/cp.6279069812392056534 [none]
+[debug] [2022-01-01T21:24:43.469Z] <<< [apiv2][status] GET https://cloudresourcemanager.googleapis.com/v1/operations/cp.6279069812392056534 200
+[debug] [2022-01-01T21:24:43.469Z] <<< [apiv2][body] GET https://cloudresourcemanager.googleapis.com/v1/operations/cp.6279069812392056534 {"name":"operations/cp.6279069812392056534","metadata":{"@type":"type.googleapis.com/google.cloudresourcemanager.v1.ProjectCreationStatus","ready":true},"done":true,"error":{"code":9,"message":"Callers must accept Terms of Service","details":[{"@type":"type.googleapis.com/google.rpc.PreconditionFailure","violations":[{"type":"TOS","subject":"cloud","description":"Callers must accept Terms of Service"}]}]}}
+[debug] [2022-01-01T21:24:43.813Z] FirebaseError: Callers must accept Terms of Service
+    at OperationPoller.poll (C:\Users\juans\AppData\Roaming\npm\node_modules\firebase-tools\lib\operation-poller.js:24:19)
+    at processTicksAndRejections (node:internal/process/task_queues:96:5)
+    at async createCloudProject (C:\Users\juans\AppData\Roaming\npm\node_modules\firebase-tools\lib\management\projects.js:181:29)
+    at async Object.createFirebaseProjectAndLog (C:\Users\juans\AppData\Roaming\npm\node_modules\firebase-tools\lib\management\projects.js:46:9)
+    at async promptAndCreateNewProject (C:\Users\juans\AppData\Roaming\npm\node_modules\firebase-tools\lib\init\features\project.js:32:12)
+    at async Object.doSetup [as project] (C:\Users\juans\AppData\Roaming\npm\node_modules\firebase-tools\lib\init\features\project.js:88:27)
+    at async init (C:\Users\juans\AppData\Roaming\npm\node_modules\firebase-tools\lib\init\index.js:19:9)
+[error] 
+[error] Error: Failed to create project. See firebase-debug.log for more info.
+[debug] [2022-01-01T21:24:56.528Z] ----------------------------------------------------------------------
+[debug] [2022-01-01T21:24:56.529Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\juans\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js init
+[debug] [2022-01-01T21:24:56.530Z] CLI Version:   10.0.1
+[debug] [2022-01-01T21:24:56.530Z] Platform:      win32
+[debug] [2022-01-01T21:24:56.530Z] Node Version:  v16.8.0
+[debug] [2022-01-01T21:24:56.530Z] Time:          Sat Jan 01 2022 16:24:56 GMT-0500 (Colombia Standard Time)
+[debug] [2022-01-01T21:24:56.530Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2022-01-01T21:24:56.535Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2022-01-01T21:24:56.535Z] > authorizing via signed-in user (jscrojas251@gmail.com)
+[info] 
+     ######## #### ########  ######## ########     ###     ######  ########
+     ##        ##  ##     ## ##       ##     ##  ##   ##  ##       ##
+     ######    ##  ########  ######   ########  #########  ######  ######
+     ##        ##  ##    ##  ##       ##     ## ##     ##       ## ##
+     ##       #### ##     ## ######## ########  ##     ##  ######  ########
+
+You're about to initialize a Firebase project in this directory:
+
+  F:\Programacion\sofka\app-citas
+

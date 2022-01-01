@@ -2,14 +2,18 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App';
-import { store } from './app/store';
 import { Provider } from 'react-redux';
 import * as serviceWorker from './serviceWorker';
+import configureStore from './redux/store/configureStore';
+import Page1 from './pages/CitasTablas';
+
+
+const store =configureStore();
 
 ReactDOM.render(
   <React.StrictMode>
     <Provider store={store}>
-      <App />
+      <App/>
     </Provider>
   </React.StrictMode>,
   document.getElementById('root')
